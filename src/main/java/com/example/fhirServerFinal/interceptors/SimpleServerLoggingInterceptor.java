@@ -7,8 +7,10 @@ import ca.uhn.fhir.rest.api.server.RequestDetails;
 import ca.uhn.fhir.rest.api.server.ResponseDetails;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 @Interceptor
+@Component
 public class SimpleServerLoggingInterceptor {
     private final Logger ourLog = LoggerFactory.getLogger(SimpleServerLoggingInterceptor.class);
 
